@@ -2,7 +2,7 @@
 
 This project is an interactive **Movie Recommender System** built using **Python**, **Machine Learning**, and a user-friendly **Streamlit** interface. It provides personalized movie recommendations based on the user's selection by leveraging content-based filtering techniques.
 
-At its core, the system analyzes movie features and computes a similarity matrix using **Cosine Similarity**. Once a user selects a movie, the app quickly identifies and displays a list of similar movies, along with their posters and movie description including *Genres*,*Release data*,*Ratings* and *Overview* using data fetched from the **TMDB API**. 
+At its core, the system analyzes movie features and computes a similarity matrix using **Cosine Similarity**. Once a user selects a movie, the app quickly identifies and displays a list of similar movies, along with their posters and movie description including *Genres*, *Release data*, *Ratings* and *Overview* using data fetched from the **TMDB API**. 
 
 Designed with simplicity, speed, and scalability in mind, this project demonstrates how machine learning can be integrated with an intuitive frontend to create a seamless user experience.
 
