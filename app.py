@@ -2,14 +2,12 @@ import pickle
 import streamlit as st
 import requests
 
-# Set page configuration
 st.set_page_config(
     page_title="Movie Recommender",
     layout="wide",
     initial_sidebar_state="auto"
 )
 
-# CSS including professional hover zoom + shadow effect on posters
 st.markdown("""
     <style>
     body {
@@ -62,7 +60,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Fetch full movie details from TMDB
+#fetching full movie details from TMDB
 def fetch_movie_details(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US"
     data = requests.get(url).json()
@@ -76,7 +74,6 @@ def fetch_movie_details(movie_id):
     }
 
 
-# Updated recommendation function
 def recommend(movie):
     index = movies[movies['title'] == movie].index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
@@ -97,22 +94,18 @@ def recommend(movie):
     return recommended_movies
 
 
-# Load pickled data
 movies = pickle.load(open('artifacts/movie_list.pkl', 'rb'))
 similarity = pickle.load(open('artifacts/similarity.pkl', 'rb'))
 
-# Title
 st.markdown("<h1 style='text-align: center; color: white;'>🎬 Movie Recommender System </h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: #d1d1d1;'>Find your next favorite movie in seconds</h4>", unsafe_allow_html=True)
 
-# Selectbox
 movie_list = movies['title'].values
 selected_movies = st.selectbox(
     'Type or select a movie to get recommendations',
     movie_list
 )
 
-# Button with loading spinner
 if st.button('Show Recommendations'):
     with st.spinner('🔄 Fetching recommendations, please wait...'):
         recommended_movies = recommend(selected_movies)
@@ -120,7 +113,7 @@ if st.button('Show Recommendations'):
     cols = st.columns(5)
     for i in range(5):
         with cols[i]:
-            # Use raw HTML for poster with hover effect container
+            
             st.markdown(f"""
                 <div class="poster-container">
                     <img src="{recommended_movies[i]['poster']}" alt="{recommended_movies[i]['title']} poster">
