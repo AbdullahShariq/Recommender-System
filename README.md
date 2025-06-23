@@ -59,17 +59,17 @@ After downloading:
 ##  Getting Started
 
 1. **Clone the repository**
-   ```bash
-    git clone https://github.com/your-username/movie-recommendation-system.git
-   cd movie-recommendation-system
-   ```
+```bash
+git clone https://github.com/your-username/movie-recommendation-system.git
+cd movie-recommendation-system
+```
 2.**Install dependencies**
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 3.**Run the Streamlit app**
 ```bash
-    streamlit run app.py
+streamlit run app.py
 ```
 
 ##  Screenshots
@@ -86,7 +86,7 @@ After downloading:
 
 ### 🔹 Recommendation Extended View
 <p align="center">
-  <img src="screenshots/recommendation_expanded_view.png" alt="Recommendation Expanded View" width="700"/>
+  <img src="screenshots/recommendation_expanded.png" alt="Recommendation Expanded View" width="700"/>
 </p>
 
 ---
@@ -98,6 +98,7 @@ After downloading:
 - Scikit-learn  
 - Streamlit  
 - TMDB API
+
 
 Thanks for checking out this project! Your feedback and suggestions are always welcome.
 
