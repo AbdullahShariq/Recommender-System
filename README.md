@@ -65,7 +65,7 @@ After downloading:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/movie-recommendation-system.git
+git clone https://github.com/AbdullahShariq/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 2.**Install dependencies**
