@@ -16,7 +16,7 @@ Designed with simplicity, speed, and scalability in mind, this project demonstra
 ##  Features
 
 -  **Content-based filtering** using cosine similarity
--  Interactive and minimal UI built with **Streamlit**
+-  Interactive and sleek UI built with **Streamlit**
 -  Precomputed similarity matrix for fast recommendations
 -  Movie posters fetched via the **TMDB API**
 -  Modular and well-organized code in `src/` folder
