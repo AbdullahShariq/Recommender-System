@@ -53,7 +53,7 @@ Due to GitHub’s file size limits, the following files are **not included** in 
 - Dataset `.csv` files (stored in `data/`)
 
 ###  Download from:
-👉 [**Click here to download dataset and model files**](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+[**Click here to download dataset and model files**](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
 After downloading:
 - Place dataset files inside a folder named `data/`
@@ -65,8 +65,8 @@ After downloading:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/AbdullahShariq/movie-recommendation-system.git
-cd movie-recommendation-system
+git clone https://github.com/AbdullahShariq/Recommender-System.git
+cd Recommender-System
 ```
 2.**Install dependencies**
 ```bash
